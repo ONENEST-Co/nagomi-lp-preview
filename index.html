@@ -148,8 +148,10 @@ a[data-cta="line"].btn small{margin:0 0 2px}
 .gold svg{position:absolute;inset:0;width:100%;height:100%}
 .gold .gt{position:absolute;inset:0;display:grid;place-content:center;text-align:center;color:#4A3208;line-height:1.2;font-weight:700}
 .gold .gt small{font-size:9px;letter-spacing:.04em}
-.gold .gt b{font-size:15px;letter-spacing:.02em;margin:3px 0 2px;text-shadow:0 1px 0 rgba(255,255,255,.45)}
-.gold .gt i{font-style:normal;font-size:8.5px;letter-spacing:.18em;color:#6B4A0E}
+.gold .gt b{font-size:13px;letter-spacing:0;margin:1px 0 0;line-height:1.1;text-shadow:0 1px 0 rgba(255,255,255,.45);white-space:nowrap}
+.gold .gt b em{font-style:normal;font-size:1.75em;line-height:1;margin:0 1px}
+.gold .gt i{display:block;margin-top:3px;padding-top:3px;border-top:1px solid rgba(74,50,8,.35)}
+.gold .gt i{font-style:normal;font-size:9px;letter-spacing:.04em;color:#4A3208;font-weight:700}
 .hv-merits{grid-area:merits;display:grid;grid-template-columns:repeat(3,1fr);margin-top:20px;background:var(--white);border:1.5px solid var(--rule);border-radius:14px}
 .hv-merits li{padding:14px 6px;text-align:center;font-size:11px;line-height:1.45;font-weight:700;color:var(--sub)}
 .hv-merits li+li{border-left:1px solid var(--rule)}
@@ -277,6 +279,11 @@ a[data-cta="line"].btn small{margin:0 0 2px}
 .media img{border-radius:12px}
 .media figcaption{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:12px;font-weight:700;font-size:15px}
 .media-tag{font-size:11px;letter-spacing:.2em;color:#fff;background:var(--ink);padding:2px 10px;border-radius:99px}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:22px}
+.stat{background:var(--ink);color:#fff;border-radius:16px;padding:16px 10px 14px;text-align:center}
+.stat .lbl{display:block;font-size:12px;font-weight:700;color:rgba(255,255,255,.75);letter-spacing:.04em}
+.stat b{display:block;font-size:clamp(28px,8.6vw,48px);line-height:1.15;color:var(--orange-l);letter-spacing:-.02em;white-space:nowrap}
+.stat b small{font-size:.38em;color:#fff;margin-left:2px;letter-spacing:0}
 .guests{display:grid;grid-template-columns:1fr 1fr;gap:10px}
 .guest{border-radius:16px;overflow:hidden;aspect-ratio:4/3;background:var(--paper)}
 .guest img{width:100%;height:100%;object-fit:cover;object-position:50% 35%}
@@ -443,7 +450,7 @@ footer .copy{margin-top:22px;opacity:.7}
   .hv-sub h1{font-size:clamp(32px,3.2vw,46px)}
   .hv-offer{grid-template-columns:1fr 150px;gap:20px;margin-top:4px}
   .gold{width:150px;height:150px}
-  .gold .gt small{font-size:12px}.gold .gt b{font-size:22px}.gold .gt i{font-size:10px}
+  .gold .gt small{font-size:12px}.gold .gt b{font-size:19px}.gold .gt i{font-size:12px}
 
   .hv-merits{margin-top:28px}
   .hv-merits li{padding:18px 12px;font-size:13px;display:flex;align-items:center;justify-content:center;gap:12px;text-align:left}
@@ -528,9 +535,9 @@ footer .copy{margin-top:22px;opacity:.7}
           <p class="now">1,980<small>円（税込）</small></p>
           <p class="note">問診・検査・施術・ケア指導つき</p>
         </div>
-        <div class="gold" role="img" aria-label="腰痛施術の整骨院 実績多数">
+        <div class="gold" role="img" aria-label="施術実績 累計3万人以上・年間2,000人">
           <svg viewBox="0 0 100 100" aria-hidden="true"><defs><radialGradient id="gd" cx="35%" cy="30%" r="75%"><stop offset="0" stop-color="#FFF4C4"/><stop offset=".45" stop-color="#E8C766"/><stop offset=".8" stop-color="#C79A2E"/><stop offset="1" stop-color="#9C7420"/></radialGradient><linearGradient id="gr" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFF1B8"/><stop offset=".5" stop-color="#B8862A"/><stop offset="1" stop-color="#FBE59A"/></linearGradient></defs><circle cx="50" cy="50" r="49" fill="url(#gr)"/><circle cx="50" cy="50" r="46" fill="url(#gd)"/><circle cx="50" cy="50" r="44.5" fill="none" stroke="#FFF6D0" stroke-width=".6" opacity=".8"/><g fill="#8A651A" opacity=".75"><ellipse cx="31.69" cy="84.43" rx="4.6" ry="1.9" transform="rotate(236.0 31.69 84.43)"/><ellipse cx="21.48" cy="76.60" rx="4.6" ry="1.9" transform="rotate(255.0 21.48 76.60)"/><ellipse cx="14.37" cy="65.86" rx="4.6" ry="1.9" transform="rotate(274.0 14.37 65.86)"/><ellipse cx="11.15" cy="53.40" rx="4.6" ry="1.9" transform="rotate(293.0 11.15 53.40)"/><ellipse cx="12.16" cy="40.57" rx="4.6" ry="1.9" transform="rotate(312.0 12.16 40.57)"/><ellipse cx="17.29" cy="28.76" rx="4.6" ry="1.9" transform="rotate(331.0 17.29 28.76)"/><ellipse cx="25.99" cy="19.27" rx="4.6" ry="1.9" transform="rotate(350.0 25.99 19.27)"/><ellipse cx="68.31" cy="84.43" rx="4.6" ry="1.9" transform="rotate(124.0 68.31 84.43)"/><ellipse cx="78.52" cy="76.60" rx="4.6" ry="1.9" transform="rotate(105.0 78.52 76.60)"/><ellipse cx="85.63" cy="65.86" rx="4.6" ry="1.9" transform="rotate(86.0 85.63 65.86)"/><ellipse cx="88.85" cy="53.40" rx="4.6" ry="1.9" transform="rotate(67.0 88.85 53.40)"/><ellipse cx="87.84" cy="40.57" rx="4.6" ry="1.9" transform="rotate(48.0 87.84 40.57)"/><ellipse cx="82.71" cy="28.76" rx="4.6" ry="1.9" transform="rotate(29.0 82.71 28.76)"/><ellipse cx="74.01" cy="19.27" rx="4.6" ry="1.9" transform="rotate(10.0 74.01 19.27)"/></g></svg>
-          <div class="gt"><small>腰痛施術の<br>整骨院</small><b>実績多数！</b><i>★★★★★</i></div>
+          <div class="gt"><small>施術実績</small><b>累計<em>3</em>万人</b><small>以上</small><i>年間2,000人</i></div>
         </div>
       </div>
       <ul class="hv-merits rv">
@@ -672,6 +679,10 @@ footer .copy{margin-top:22px;opacity:.7}
   <div class="wrap">
     <div class="sh rv"><span class="no">05</span><span class="en">TRUST</span></div>
     <h2 class="rv">地域の方に選ばれ、<br><span class="or">雑誌にも掲載</span>されました。</h2>
+    <div class="stats rv">
+      <div class="stat"><span class="lbl">累計の施術実績</span><b>30,000<small>人以上</small></b></div>
+      <div class="stat"><span class="lbl">年間の施術実績</span><b>2,000<small>人</small></b></div>
+    </div>
     <figure class="media rv">
       <img src="images/media.jpg" alt="なごみ整骨院が掲載された雑誌（CREA、フィッテ、ひよこクラブ、NUTSなど）" width="1000" height="555" loading="lazy">
       <figcaption><span class="media-tag">MEDIA</span>全国発行誌に掲載されました</figcaption>
